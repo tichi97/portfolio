@@ -3,6 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Work1 , {Work2,Work3} from './Work1';
 import classnames from "classnames";
 import './Experience.css';
+import Fade from 'react-reveal/Fade';
 
 class Experience extends Component{
     constructor(){
@@ -46,6 +47,7 @@ class Experience extends Component{
     render(){
         return(
             <section className='mv6-ns pa4-ns ma2-ns ma4 mv5 flex justify-content-center' id="experience">
+            <Fade bottom>
                 <div className="about w-70-ns m-auto">
                     <h1 className='tl pl4'>Experience</h1>
                     <div className='flex-l '>
@@ -59,6 +61,7 @@ class Experience extends Component{
                         </div>
                     </div>
                 </div>
+            </Fade>
             </section>
     );
     }

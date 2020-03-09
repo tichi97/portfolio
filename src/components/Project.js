@@ -2,13 +2,18 @@ import React, {Component} from 'react';
 import './Project.css';
 import github from '../assets/github.svg';
 import lnk from '../assets/link.svg';
+import Fade from 'react-reveal/Fade';
 
 class Project extends Component{
   render(){
       return (
       <div className="mv6-ns ma2-ns ma4 mv5 pa4-l" id='project'>
+      <Fade>
         <h1>Project Page</h1>
+      </Fade>
+        <Fade bottom>
         <div className='flex flex-wrap justify-center pa3-ns'>
+
             <div className='tj h-75-l w-25-l w-70-m ma4 pa4 project'>
                 <div className='flex justify-between'>
                     <img alt='github' src={github} className='mb4'/>
@@ -94,6 +99,7 @@ class Project extends Component{
                 </div>
             </div>
         </div>
+        </Fade>
       </div>
     );
   }

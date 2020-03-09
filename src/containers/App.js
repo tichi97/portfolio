@@ -8,6 +8,7 @@ import LandingPage from '../components/LandingPage';
 import Experience from '../components/Experience';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import Socials from '../components/Socials';
 
 
 
@@ -16,8 +17,9 @@ class App extends Component{
       return (
       <div className="App myapp">
         <NavBar/>
+        <Socials/>
         <LandingPage/>
-        {/*<Home/>*/}
+
         <About/>
         <Experience/>
         <Project/>
