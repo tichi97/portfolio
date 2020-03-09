@@ -1,0 +1,40 @@
+.logoMo {
+            stroke: black;
+            stroke-width: 2px;
+            stroke-linejoin: round;
+            stroke-linecap: round;
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+
+
+            /*transform-origin: 50% 50%;*/
+}
+.test{
+    animation:logoMov 4s ease;
+    animation-iteration-count: 1;
+}
+
+@keyframes logoMov {
+            /*0%   { transform: translate(0, 0); }*/
+            /*0%  { transform: translate(0, 0); }
+            50%  { transform: translate(0, 400px); }
+            100%  { transform: translate(0, 350px); }*/
+            /*100%  { transform: scale(1); }*/
+            /*100%  { transform: translate(0, 0); }*/
+            0%   { stroke-dashoffset: 1000; }
+            50%   { stroke-dashoffset: 0; }
+            100% { stroke-dashoffset: 1000; }
+
+}
+div{
+    height:100vh;
+    z-index:3;
+    animation:fade 4s;
+    animation-iteration-count: 1;
+}
+@keyframes fade{
+    0%   { opacity: 1; }
+    50%  { opacity: 0.5; }
+    100% { opacity: 0; }
+}
+

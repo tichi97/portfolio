@@ -1,0 +1,64 @@
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+.landing{
+    background-image: url('../assets/abstract.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    animation:2s shrink 3s;
+    animation-fill-mode:forwards;
+    margin:auto;
+    margin-top: 0;
+    transform:translateY(0);
+    /*opacity: 90%;*/
+
+}
+
+.landing h1{
+
+    animation:3s fade 5s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+@keyframes shrink{
+    0%{
+        width:100vw;
+        height:100vh;
+        transform:translateY(0);
+        /*margin-top: 0;*/
+    }
+
+    100%{
+        width:25em;
+        height:25em;
+        transform:translateY(35%);
+        /*margin-top: 5rem;*/
+    }
+}
+@media only screen and (max-width: 600px){
+    .first-sm{
+        animation:none;
+        text-align: center;
+        opacity: 100%;
+        color:#ffffff!important;
+        /*font-size: 3em;*/
+    }
+    .landing-sm{
+        animation:none;
+        /*margin:1em;*/
+    }
+}
+

@@ -1,0 +1,9 @@
+ul {
+
+  list-style: none;
+  font-family: 'Playfair Display';
+
+}
+.active{
+    color:#CCCCCC!important;
+}

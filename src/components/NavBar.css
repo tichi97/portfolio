@@ -1,0 +1,17 @@
+a{
+    font-family: 'Lora';
+    text-decoration: none !important;
+
+}
+
+.nav{
+      position: fixed;
+      top: 0;
+      box-shadow: 0rem 0.3rem 0.2rem  rgba( 0, 0, 0, 0.03 );
+      transition: top 0.3s;
+
+}
+
+.nav--hidden {
+  top: -4rem;
+}
